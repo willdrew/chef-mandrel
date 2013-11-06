@@ -15,7 +15,7 @@ describe 'mandrel resource' do
     ChefSpec::ChefRunner.new(:step_into => ['mandrel'])
   end
 
-  let :attr_writer do
+  let :attr_setter do
     chef_run.node.set['mandrel']['default_test']
   end
 
