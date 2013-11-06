@@ -19,7 +19,7 @@ describe 'mandrel resource' do
     chef_run.node.set['mandrel']['default_test']
   end
 
-  let :attr_reader do
+  let :attr_getter do
     chef_run.node['mandrel']['default_test']
   end
 
