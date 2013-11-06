@@ -2,6 +2,10 @@
 
 This file is used to list changes made in each version of mandrel.
 
+## 0.1.1:
+
+* Fixed broken unit tests in default_spec
+
 ## 0.1.0:
 
 * Initial release of mandrel
