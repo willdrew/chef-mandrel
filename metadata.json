@@ -1,0 +1,34 @@
+{
+  "name": "mandrel",
+  "description": "Provides a Chef LWRP for the python-mandrel pip",
+  "long_description": "mandrel Cookbook\n=================\n\nThis cookbook provides a LWRP for projects that use the python-mandrel pip,\nwhich can be found here: https://github.com/ethanrowe/python-mandrel\n\nThe purpose of this Chef LWRP is to make the laying out of Mandrel.py files easier\ndurning deploys for projects that use python-mandrel.\n\n\nRequirements\n------------\n\n#### pip\n- `mandrel` - this Chef LWRP is pointless without your project using this pip.\n\nUsage\n-----\n#### mandrel::default\n\ne.g.\nCalling the mandrel resource using some defaults and expected common overrides;\n\n```ruby\nmandrel \"/some/project/release/current\" do\n  owner                    'unique_owner'\n  group                    'unique_group'\nend\n```\n\n#### mandrel::pylog\n\ne.g.\nCalling the mandrel resource using some defaults and expected common overrides;\n\n```ruby\nmandrel_pylog \"/some/project/release/current\" do\n  owner                    'unique_owner'\n  group                    'unique_group'\nend\n```\n\nContributing\n------------\n\n1. Fork the repository on Github\n2. File an issue with the canonical repository\n3. Create a named feature branch referencing that issue\n4. Write your change\n5. Write tests for your change (if possible within existing test infra)\n6. Run the tests, ensuring they all pass\n7. Submit a Pull Request using Github\n\nLicense and Authors\n-------------------\nAuthors: Will Drew\nLicense: MIT\n",
+  "maintainer": "Will Drew",
+  "maintainer_email": "willdrew@gmail.com",
+  "license": "MIT",
+  "platforms": {
+  },
+  "dependencies": {
+    "python": ">= 0.0.0"
+  },
+  "recommendations": {
+  },
+  "suggestions": {
+  },
+  "conflicting": {
+  },
+  "providing": {
+  },
+  "replacing": {
+  },
+  "attributes": {
+  },
+  "groupings": {
+  },
+  "recipes": {
+    "mandrel::_install": "This recipe is used to install the mandrel (python pip)",
+    "mandrel::default": "This (driver) recipe is used to call the _install recipe",
+    "mandrel::default_test": "This recipe is strictly intended for testing the mandrel's default resource",
+    "mandrel::pylog_test": "This recipe is strictly intended for testing the mandrel's pylog resource"
+  },
+  "version": "0.2.0"
+}

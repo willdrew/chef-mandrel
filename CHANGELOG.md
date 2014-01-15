@@ -2,6 +2,11 @@
 
 This file is used to list changes made in each version of mandrel.
 
+## 0.2.0
+* Bumped to version 0.2.0 (Updated CHANGELOG)
+* Now supports chef-community cookbooks for publishing
+* Tweaked metadata.rb and generated metadata.json file
+
 ## 0.1.1:
 
 * Fixed broken unit tests in default_spec
